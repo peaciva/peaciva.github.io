@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop - Peaciva</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/regular.min.css" integrity="sha512-EbT6icebNlvxlD4ECiLvPOVBD0uQdt4pHRg8Gpkfirdu9W8l2rtRZO8rThjqeIK08ubcFeiFKHbek7y+lEbWIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="header-logo">
-          <a href="index.html"><img src="img/peaciva.png" alt=""></a>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Peaciva</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/regular.min.css" integrity="sha512-EbT6icebNlvxlD4ECiLvPOVBD0uQdt4pHRg8Gpkfirdu9W8l2rtRZO8rThjqeIK08ubcFeiFKHbek7y+lEbWIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <style>
+            body{
+                position: absolute;
+            }
+        </style>
+        <header>
+            <div class="header-logo">
+              <a href="index.html"><img src="img/peaciva.png" alt=""></a>
+            </div>
+            
+            <div class="nav-links">
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "shop.html">Shop</a></li>
+                    <li><a href = "about.html">About</a></li>
+                    <li><a href = "#projects">Projects</a></li>
+                    <li><a href = "contact.html">Contacts</a></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+    
+                </ul>
+                
+                
+            </div>
+    
+            <!-- <i class="fa-solid fa-cart-shopping"></i> -->
+    
+            <div class="burger" onclick="burgerClick()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+    
+            <div class="close" onclick="closeClick()">
+                <i class="fa-solid fa-times"></i>
+            </div>
+            
+        </header>
         
-        <div class="nav-links">
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "shop.html">Shop</a></li>
-                <li><a href = "about.html">About</a></li>
-                <li><a href = "#projects">Projects</a></li>
-                <li><a href = "contact.html">Contacts</a></li>
-            </ul>
-        </div>
-      
-        <i class="fa-solid fa-cart-shopping"></i>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </header>
+        
 
     <section id="shop">
         <center><h1>Shop with Us</h1></center> 
@@ -80,6 +97,48 @@
                  </div>
  
              </div>
+
+             <div class="item1">
+                <div class="item">
+                    <img src="img/ourServicesBg5.png" alt="">
+                    <p>Printing</p>
+                    <h6>Jotter Design (100 pcs)</h6>
+                    <span><h6>110,000</h6></span>
+
+                    <div></div>
+                </div>
+
+                <div class="item">
+                    <img src="img/ourServicesBg2.jpeg" alt="">
+                    <p>Printing</p>
+                    <h6>Customized Nylon (100)</h6>
+                    
+                    <span><h6>20,000</h6></span>
+
+                    <div></div>
+                </div>
+
+                <div class="item">
+                    <img src="img/ourServicesBg7.jpeg" alt="">
+                    <p>Printing</p>
+                    <h6>T-shirt Design (1 pc)</h6>
+                   
+                    <span><h6>5,000</h6></span>
+
+                    <div></div>
+                </div>
+
+                <div class="item">
+                    <img src="img/ourServicesBg5.png" alt="">
+                    <p>Printing</p>
+                    <h6>Pro Flyer Design</h6>
+                    
+                    <span><h6>10,000</h6></span>
+
+                    <div></div>
+                </div>
+
+            </div>
              <div class="item2">
              <div class="item">
                  <img src="img/ourServicesBg7.jpeg" alt="">
@@ -122,6 +181,7 @@
              </div>
              </div>
          </div>
+         
      </section>
 
      <footer>
@@ -161,6 +221,6 @@
 </footer>
 
 
- 
+<script src="script.js"></script>
 </body>
 </html>
