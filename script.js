@@ -1,3 +1,27 @@
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+  const close = document.querySelector('.close');
+
+  function burgerClick(){
+    nav.classList.remove('nav-links');  
+    nav.classList.add('nav-active');
+    burger.style.display="none";
+    close.style.display="block";
+  }
+  
+  function closeClick(){
+    nav.classList.remove('nav-active');  
+    nav.classList.add('nav-links');
+    burger.style.display="block";
+    close.style.display="none";
+
+
+  }
+
+
+
+
+
 // Function for contact details validation
 function validate(){
     const fullName = document.form_name.full_name;
@@ -193,18 +217,4 @@ function showPerson(person) {
   });
   
 
-
-
-
-
-const navSlide = () => {
-    const burger = document.querySelector('.burger')
-    const nav = document.querySelector('.nav-links')
-
-    function burgerClick(){
-        nav.classList.toggle('nav-active');
-    }
-}
-
-navSlide();
 
